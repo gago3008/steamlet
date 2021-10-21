@@ -11,5 +11,5 @@ class CustomerOrder(Base):
     _totalPrice = Column(Integer, unique=False)
     _createTime = Column(TIMESTAMP, unique=False)
     _endTime = Column(TIMESTAMP, unique=False)
-    
-    
+
+ 

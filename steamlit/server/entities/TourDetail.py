@@ -1,5 +1,5 @@
 from sqlalchemy.sql.expression import null
-from sqlalchemy.sql.sqltypes import TIMESTAMP
+from sqlalchemy.sql.sqltypes import TIMESTAMP, DateTime
 from . import Base
 from sqlalchemy import Boolean, Column, ForeignKey, Integer, String
 
@@ -14,4 +14,5 @@ class TourDetail(Base):
     _startTime = Column(TIMESTAMP, unique=False)
     _totalPeople = Column(Integer, unique=False)
     _categoryId = Column(Integer, unique=False, nullable=False)
-
+    _removeTime = Column(DateTime, unique=False, nullable=False)
+    _tourId = Column(Integer, unique=False, nullable=False)

@@ -4,7 +4,7 @@ from middlewares.securities import Security
 from validate import schema
 from config.configs import config_model
 from api import UserSession, SessionMap
-from repositories import TourRepository, TourDetaiRepository
+from repositories import TourDetailRepository
 from services import TourDetailService
 from common.convertDB import to_list
 
